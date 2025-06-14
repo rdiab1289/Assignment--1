@@ -1,19 +1,20 @@
-<!DOCTYPE html>
 <!-- Ricardo Diab, 9021289 -->
-<!-- Professor said in class that we need to find code online to make the table!-->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My first website</title>
+
 </head>
 <body>
-    <header>
+    <header id="top">
         <h1>Tokyo</h1>
+
     </header>
     <main>
-        <section>
-            <h2 id="MS1">City Overview</h2>
+        <section id="MS1">
+            <h2>City Overview</h2>
             <blockquote cite="https://en.wikipedia.org/wiki/Tokyo">
                 Tokyo, officially the Tokyo Metropolis, is the capital and most populous city in Japan. 
                 With a population of over 14 million in the city proper in 2023, it is one of the most populous urban areas in the world. 
@@ -22,8 +23,8 @@
             </blockquote>
         </section>
 
-        <section>
-            <h2 id="MS2">Discover Tokyo</h2>
+        <section id="MS2">
+            <h2>Discover Tokyo</h2>
             <figure>
                 <img src="C:\Users\fouss\OneDrive\Pictures\Tokyo Picture.jpg" 
                 alt="Photo of the city of Tokyo">
@@ -31,8 +32,8 @@
             </figure>
         </section>
 
-        <section>
-            <h2 id="MS3">Famous Quote</h2>
+        <section id="MS3">
+            <h2>Famous Quote</h2>
 
             <p>
             <q>Working in Tokyo has convinced me that, contrary to what people think, it is actually one of the world's most 
@@ -41,8 +42,8 @@
             
         </section>
 
-        <section>
-            <h2 id="MS4">Watch: Explore Tokyo</h2>
+        <section id="MS4">
+            <h2>Watch: Explore Tokyo</h2>
 
             <video controls muted>
                 <source src="C:\Users\fouss\Downloads\TOKYO _ Japan Cinematic travel film.mp4" type="video/mp4">
@@ -57,8 +58,8 @@
     </main>
 
     <aside>
-        <section>
-            <h2 id="AS1"></h2>Learn More About Tokyo</h2>
+        <section id="AS1">
+            <h2></h2>Learn More About Tokyo</h2>
             <ul>
                 <li><a href="https://www.japan-guide.com/e/e3075.html" target="_blank">Tokyo Food Guide</a></li>
                 <li><a href="https://www.gotokyo.org/en/see-and-do/attractions/index.html" target="_blank">Best things to do in Tokyo</a></li>
@@ -66,12 +67,24 @@
             </ul>
         </section>
         
-        <section>
-            <h2 id="AS2">Fun Facts About Tokyo!</h2>
+        <section id="AS2">
+            <h2>Fun Facts About Tokyo!</h2>
         </section>
 
-        <section>
-            <h2 id="AS3">Contact Us</h2>
+        <section id="AS3">
+            <h2>Contact Us</h2>
+            <form name="contact" action="contact" method="get">
+                <fieldset>
+                    <legend>Authentication</legend>
+                    <label for="username" class="form-label">User Name</label>
+                    <input type="text" autofocus name="username" id="username" placeholder="johnsmith" class="form-control">
+                    <br>
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" id="password" class="form-control">
+                </fieldset>
+
+            
+            </form>
         </section>
     </aside>
 
