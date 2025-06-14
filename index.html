@@ -77,20 +77,23 @@
             <br>
             <form name="contact" action="contact" method="get">
                 <label for="name" class="form-label">Your name:</label>
-                <input type="text" autofocus name="username" id="username" placeholder="johnsmith" class="form-control">
+                <input type="text" autofocus name="name" id="name" placeholder="Enter your full name" class="form-control">
+                
                 <label for="email" class="form-label">Email Address:</label>
                 <input type="email" required name="email" id="email" class="form-control">
-                <label for="con">Reason for Contact:</label>
+                
+                <label for="con" class="form-label">Reason for Contact:</label>
                 <select name="con" id="con">
                     <option value="select an option">Select an option</option>
                     <option value="inquiry">Inquiry</option>
                     <option value="patnership">Partnership</option>
                     <option value="support">Support</option>
-                <label for="message">Your message:</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 </select>
 
-            
+                <label for="message" class="form-label">Your message:</label>
+                <textarea name="message" id="message" cols="30" rows="5"></textarea>
+        
+                <input type="submit" id="button" name="button" class="form-control" value="Submit">
             </form>
         </section>
     </aside>
