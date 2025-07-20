@@ -1,39 +1,55 @@
 /*Ricardo Diab 9021289*/
 html{
     font: normal normal normal 20px/1.5 Arial, Helvetica, sans-serif;
-    background-color: grey;
+    line-height : 1.5;
+    background-color: rgb(219, 213, 213);
 }
 body{
     max-width: 1300px;
-    padding: .5rem;
     margin: auto;
+    padding: .4rem;
     border-style: solid;
-    border-width: .25rem;
-    border-color: #2596be;
-    background-color: whitesmoke;
+    border-width: .3rem;
+    border-color: grey;
+    background-color: rgb(219, 213, 213);
 }
+main{
+    width: 65%;
+    float: left;
+    padding : .25rem;
+    background-color: rgb(219, 213, 213);
+}
+aside{
+    width : 33%;
+    float: right;
+    padding: 0.2rem;
+    background-color: rgb(219, 213, 213);
+}
+
+/* Header and Footer */
 header, footer{
     background-image: linear-gradient(to right, white, blue);
     text-align: center;
 }
 header{
     font-size: 2em;
-    color: rgb(2, 6, 253);
+    color: black;
 }
 footer{
     font-size: 0.5em;
+    clear : both;
 }
 section h2{
-    color:#2596be;
+    color:#2063aa;
     font-variant: normal;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: left;
+    text-align: center;
 }
 blockquote{
     font-style: italic;
-    background-color: rgb(178, 178, 178);
+    background-color: white;
     padding: 1rem;
     border-left: 0.25rem solid #2596be;
     width: 80%;
@@ -65,8 +81,72 @@ q{
     padding: .30rem;
     margin: 2rem auto;
 }
-#Video{
-    border: 0.75rem;
+/* Removing previous ul design */ 
+ul {
+    list-style-type: none;
+}
+/* Unvisited link */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+/* Visited link */
+a:visited {
+  color: #2596be;
+}
+/* Mouse over link (while hovering it)*/
+a:hover {
+  color: blueviolet;
+  text-decoration: underline;
+}
+/* Selected link (while pressing it)*/
+a:active{
+  color: blueviolet;
+  text-decoration: underline;
+}
+/* Iframe Design */
+iframe {
+    border-radius: 10px;
+    background-color: #2596be;
+    padding: 0.3em;
+    max-width: 100%;
     display: block;
-    margin: center;
+    margin: auto;
+}
+table {
+    border: 1px solid;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+th, td {
+    border: 0.0625rem solid;
+    text-align: left;
+    padding: 15px;
+    font-weight: 500;
+    font-variant: small-caps;
+}
+th {
+    background-color: rgb(20, 73, 126);
+    color: white;
+    border: 0.0625rem solid black;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr:hover {background-color: #2596be;}
+
+input{
+    width: 95%;
+}
+
+.form-label {
+    font-variant: small-caps;
+    font-weight: 800;
+    color: rgb(20, 73, 126);
+}
+.form-control{
+    padding: 0.25rem;
+    border: 0.25rem;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
 }
