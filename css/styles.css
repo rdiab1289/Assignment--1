@@ -65,3 +65,8 @@ q{
     padding: .30rem;
     margin: 2rem auto;
 }
+#Video{
+    border: 0.75rem;
+    display: block;
+    margin: center;
+}
