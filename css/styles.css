@@ -60,12 +60,13 @@ figure{
     border: .30rem solid #2596be;
     border-radius: .10rem;
     padding: .5rem;
+    background-color: white;
 }
 figure > img{
     width: 85%;
     display: block;
     margin: auto;
-    border: .25rem solid blueviolet;
+    border: .25rem solid grey;
     border-radius: .5rem;
 }
 figcaption{
@@ -139,6 +140,10 @@ input{
     width: 95%;
 }
 
+select, textarea{
+    width: 95%;
+}
+
 .form-label {
     font-variant: small-caps;
     font-weight: 800;
@@ -149,4 +154,15 @@ input{
     border: 0.25rem;
     border-radius: .5rem;
     margin-bottom: 2rem;
+}
+/* Media Queries for smaller screens */
+@media(max-width: 750px){
+    html{
+        font-size: 12px;
+    }
+}@media(max-width: 620px){
+    main, aside{
+        float : none;
+        width : 100%;
+    }
 }
